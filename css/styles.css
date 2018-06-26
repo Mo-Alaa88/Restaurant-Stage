@@ -71,9 +71,6 @@ nav {
   height: 80px;
   background-color: #252831;
   text-align:center;
-  /*add ryade*/
-  display: flex;
-  align-items: center;
 }
 nav h1 {
   margin: auto;
@@ -132,7 +129,6 @@ nav h1 a {
   background-color: #252831;
   /*background-color: #3397DB;*/
   align-items: center;
-  /*ryad*/
   /*add property for responseve*/
   display: flex;
   flex-direction: row;
