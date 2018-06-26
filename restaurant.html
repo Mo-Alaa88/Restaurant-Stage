@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- add lang -->
+<html lang="en">
+<head>
+  <!-- Normalize.css for better cross-browser consistency -->
+  <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+  <!-- Main CSS file -->
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <title>Restaurant Info</title>
+</head>
+
+<body class="inside">
+  <!-- Beginning header -->
+  <header>
+    <!-- create skip link  -->
+    <!-- https://youtu.be/rD3db6-vmuo-->
+    <a href="#maincontent" title="skip link" class="skip-link">skip to main Contant</a>
+    <!-- Beginning nav -->
+    <nav>
+      <h1>
+<!-- add title with a tag -->
+        <a title = "Go to Restaurant Reviews home section" href="/">Restaurant Reviews</a></h1>
+    </nav>
+    <!-- Beginning breadcrumb -->
+    <ul id="breadcrumb" >
+      <li>
+<!-- add title with a tag -->
+        <a title = "Go to Restaurant Reviews home section" href="/">Home</a></li>
+    </ul>
+    <!-- End breadcrumb -->
+    <!-- End nav -->
+  </header>
+  <!-- End header -->
+
+
+  <!-- Beginning main -->
+  <!-- remove id="maincontent" -->
+  <main>
+    <!-- Beginning map -->
+    <section id="map-container">
+      <div id="map"></div>
+    </section>
+    <!-- End map -->
+    <!-- Beginning restaurant -->
+    <section id="maincontent" id="restaurant-container">
+      <!-- h1>h2 -->
+      <h2 id="restaurant-name"></h2>
+      <!-- add alt -->
+      <img id="restaurant-img" alt="Image for restaurant" >
+      
+      <h3 id="restaurant-cuisine"></h3>
+      <!-- rewrite <address> instead of <p>  -->
+      <!-- <p id="restaurant-address"></p> -->
+      <address id="restaurant-address"></address>
+      <table id="restaurant-hours"></table>
+    </section>
+    <!-- end restaurant -->
+    <!-- Beginning reviews -->
+    <section id="reviews-container">
+      <ul id="reviews-list"></ul>
+    </section>
+    <!-- End reviews -->
+  </main>
+  <!-- End main -->
+
+  <!-- Beginning footer -->
+  <footer id="footer">
+    Copyright (c) 2017 
+<!-- add title with a tag -->
+    <a title = "Go to Restaurant Reviews home section" href="/"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+  </footer>
+  <!-- End footer -->
+
+</body>
+
+  <!-- Beginning scripts -->
+  <!-- Database helpers -->
+  <script type="text/javascript" src="js/dbhelper.js"></script>
+  <!-- Main javascript file -->
+  <script type="text/javascript" src="js/restaurant_info.js"></script>
+  <!-- Google Maps -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=
+  AIzaSyDKvVx4urCjwpU9Sg3Di_8WGI2tOrgZBNI
+  &libraries=places&callback=initMap"></script>
+  <!-- End scripts -->
+</html>
