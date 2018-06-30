@@ -142,7 +142,7 @@ createRestaurantHTML = (restaurant) => {
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
   // add alt
-  image.alt = "Image for restaurant"
+  image.alt = restaurant.name;
   li.append(image);
 
 // h1>h2
@@ -185,10 +185,25 @@ addMarkersToMap = (restaurants = self.restaurants) => {
 service worker
 */
 //check for if browser support service Worker  
-if (!navigator.serviceWorker) {
+/*if (!navigator.serviceWorker) {
   navigator.serviceWorker.register('/service-worker.js').then(function() {
     console.log('Registration worked!');
   }).catch(function() {
     console.log('Registration failed!');
   });
+}*/
+/*if ('serviceWorker' in navigator) {
+ navigator.serviceWorker.register('../service-worker.js', {scope: ''})
+ .then(function(reg) {
+   // registration worked
+   console.log('Registration succeeded. Scope is ' + reg.scope);
+ }).catch(function(error) {
+   // registration failed
+   console.log('Registration failed ' + error);
+ });
+}*/
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker
+           .register('/sw.js')
+           .then(function() { console.log("Service Worker Registered"); });
 }
