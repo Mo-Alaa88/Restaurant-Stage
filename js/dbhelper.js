@@ -8,8 +8,10 @@ class DBHelper {
    * Change this to restaurants.json file location on your server.
    */
   static get DATABASE_URL() {
-    const port = 8000 // Change this to your server port
-    return `return `data/restaurants.json``;
+    const port = 5500 // Change this to your server port
+    // return `http://localhost:${port}/data/restaurants.json`;
+    return `data/restaurants.json`;
+    // return `https://amr-adel.github.io/fend-p6-restaurant-reviews/data/restaurants.json`;
   }
 
   /**
@@ -150,7 +152,8 @@ class DBHelper {
    * Restaurant image URL.
    */
   static imageUrlForRestaurant(restaurant) {
-     return (`img/${restaurant.photograph}`);   }
+    return (`img/${restaurant.photograph}`);
+  }
 
   /**
    * Map marker for a restaurant.
@@ -166,4 +169,17 @@ class DBHelper {
     return marker;
   }
 
+}
+
+
+// Register a service worker hosted at the root of the
+// site using the default scope.
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('../sw.js').then(function(registration) {
+    console.log('Service worker registration succeeded:', registration);
+  }).catch(function(error) {
+    console.log('Service worker registration failed:', error);
+  });
+} else {
+  console.log('Service workers are not supported.');
 }
