@@ -10,6 +10,8 @@ For the **Restaurant Reviews** projects, you will incrementally convert a static
 
 You have been provided the code for a restaurant reviews website. The code has a lot of issues. It’s barely usable on a desktop browser, much less a mobile device. It also doesn’t include any standard accessibility features, and it doesn’t work offline at all. Your job is to update the code to resolve these issues while still maintaining the included functionality. 
 
+*[live website](https://mo-alaa88.github.io/Restaurant-Stage/)
+
 ### What do I do from here?
 
 1. clone the repo or download the zip file from (https://github.com/MohammedAlaa88/Restaurant-Stage.git). 
@@ -23,6 +25,5 @@ In a terminal, check the version of Python you have: `python -V`. If you have Py
 ### Note about ES6
 
 Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code. As much as possible, try to maintain use of ES6 in any additional JavaScript you write. 
-
 
 
