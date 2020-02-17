@@ -10,7 +10,7 @@ For the **Restaurant Reviews** projects, you will incrementally convert a static
 
 You have been provided the code for a restaurant reviews website. The code has a lot of issues. It’s barely usable on a desktop browser, much less a mobile device. It also doesn’t include any standard accessibility features, and it doesn’t work offline at all. Your job is to update the code to resolve these issues while still maintaining the included functionality. 
 
-*[live website](https://mo-alaa88.github.io/Restaurant-Stage/)
+* [live website](https://mo-alaa88.github.io/Restaurant-Stage/)
 
 ### What do I do from here?
 
